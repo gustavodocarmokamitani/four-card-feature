@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: #fafafa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: var(--Very-Light-Gray);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title h1 {
+    letter-spacing: 2.5px;
+    font-size: 32px;
+    color: var(--Very-Dark-Blue);
+    margin: 0;
+}
+
+.title h1:first-child {
+    font-weight: 200;
+}
+
+.title p {
+    padding: 0 230px;
+    color: var(--Grayish-Blue);
+}
+
+.cardGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    background: var(--Very-Light-Gray);
+    margin: 15px 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #cecece;
+    box-shadow: 5px 5px 25px 5px #cecece;
+}
+
+.red {
+    border-top: 5px solid var(--Red);
+}
+
+.cyan {
+    border-top: 5px solid var(--Cyan);
+}
+
+.card:nth-child(2) {
+    border-top: 5px solid var(--Orange);
+    margin-top: 50px;
+}
+.card:nth-child(3) {
+    border-top: 5px solid var(--Blue);
+}
+
+.card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--Very-Dark-Blue);
+    letter-spacing: 1px;
+}
+
+.card p {
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+.card img {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .title p {
+        padding: 0 50px;
+    }
+
+    .cardGroup {
+        display: grid;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .card {
+        margin: 0;
+    }
+
+    .card:nth-child(2) {
+        border-top: 5px solid var(--Orange);      
+        margin: 25px 0 ;  
+    }
+}
