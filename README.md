@@ -3,7 +3,7 @@
 
 ### `Access the Project:`
 
-## https://nifty-tereshkova-2657a3.netlify.app/
+## https://gustavodocarmokamitani.github.io/four-card-feature/
 
 --------------------------------------------------------------------------
 
